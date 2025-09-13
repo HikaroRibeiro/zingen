@@ -1,4 +1,20 @@
 /* Para definir ondes os componentes estarão quando forem construidos. */
+.py-base {
+    padding-block: var(--py-base);
+}
+
+.py-lg {
+    padding-block: var(--py-lg);
+}
+
+.py-xl {
+    padding-block: var(--py-xl);
+}
+
+.px-lg {
+    padding-inline: var(--px-lg);
+}
+
 .container {
     --max-width: 375px;
     width: min(var(--max-width),100% - var(--px-lg) * 2);
@@ -7,8 +23,35 @@
     border: solid violet;
 }
 
+/* 
+    Quando estiver no mobile;
+    Se aplicada a uma DIV esta irá sumir;
+*/
+.desktop-only {
+    display: none;
+}
+
+.even-columns {
+    display: grid;
+    gap: 1rem;
+}
+
+/* 
+    Quando estiver no desktop;
+    O display será in-line;
+*/
 @media (width >= 80em) {
     .container{
         --max-width: 80rem;
     }
+
+    .desktop-only {
+        display: initial;
+    }
+
+    .even-columns {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
+
 }
