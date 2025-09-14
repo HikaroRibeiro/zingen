@@ -36,6 +36,17 @@
     gap: 1rem;
 }
 
+.flex {
+    display: flex;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.grid {
+    display: grid;
+}
 /* 
     Quando estiver no desktop;
     O display será in-line;
