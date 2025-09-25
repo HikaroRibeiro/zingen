@@ -11,3 +11,4 @@
 /* Só vai importar o estilo abaixo se a tela for maior ou igual a 80 rem.*/
 @import url(features.css) (width >= 80rem);
 @import url(pricing.css);
+@import url(download.css)
